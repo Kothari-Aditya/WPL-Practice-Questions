@@ -13,7 +13,7 @@ $countResult = mysqli_query($conn, $countQuery);
 if (($row = mysqli_fetch_assoc($result)) && ($newRow = mysqli_fetch_assoc($countResult))) {
     echo "Average Rating of " . $newRow['numOfRecords'] . " movies is: " . $row['AvgPrice'];
 } else {
-    echo "No movies found.";
+    echo "No books found.";
 }
 
 $menuPath = 'index.html';
